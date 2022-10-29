@@ -2,37 +2,54 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Roboto", "Helvetica Neue",;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-size: 46px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+p {
+  font-weight: 100;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+/* img fix spacing w cropping */
+img {
+  margin: 10px;
+  object-fit: cover;
+}
+hr {
+  margin: 20px 25%;
+}
+.Gallery {
+  margin: 0 5%;
+}
+button {
+  margin: 20px;
+  border-width: 1px;
+  border-style: solid;
+  color: black;
+  padding: 20px;
+  background: none;
+}
+button:hover {
+  background: black;
   color: white;
+  cursor: pointer;
+}
+/* custom scrollbar styles */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: none;
 }
 
-.App-link {
-  color: #61dafb;
+::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 5px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::-webkit-scrollbar-thumb:hover {
+  background-image: linear-gradient(rgb(8, 8, 8), rgb(194, 194, 194));
 }
